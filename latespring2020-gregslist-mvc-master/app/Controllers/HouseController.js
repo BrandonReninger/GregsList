@@ -15,7 +15,11 @@ export default class HouseController {
 
         let newHouseObject = {
             address: formData.address.value,
-            price: formData.price.value
+            price: formData.price.value,
+            bedrooms: formData.bedrooms.value,
+            bathrooms: formData.bathrooms.value,
+            squarefeet: formData.squarefeet.value,
+            imgUrl: formData.imgUrl.value
         }
     }
 

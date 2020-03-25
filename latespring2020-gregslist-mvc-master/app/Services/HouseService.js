@@ -6,7 +6,14 @@ import _store from '../store.js'
 
 
 class HouseService {
-    console.log("House Service")
+    createHouse(newHouseObj) {
+        let newHouse = new House(newHouseObj)
+        _store.State.houses.push(newHouse)
+
+    }
+    constructor() {
+        console.log("howdy house service")
+    }
 }
 
 
