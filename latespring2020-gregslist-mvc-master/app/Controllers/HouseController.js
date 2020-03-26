@@ -3,7 +3,7 @@ import _store from '../store.js'
 
 
 
-function drawHouses() {
+function _drawHouses() {
     let template = ""
     let houses = _store.State.houses
 
@@ -29,8 +29,12 @@ export default class HouseController {
             squarefeet: formData.squarefeet.value,
             imgUrl: formData.imgUrl.value
         }
+
         _houseService.createHouse(newHouseObject)
         formData.reset()
+        _drawHouses()
+
+        console.log(newHouseObject)
     }
 
 }
