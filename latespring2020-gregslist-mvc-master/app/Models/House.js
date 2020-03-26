@@ -8,7 +8,7 @@ export default class House {
         this.imgUrl = data.imgUrl
     }
 
-    getHouseTemplate() {
+    getHouseTemplate(index) {
         return /*html*/ `
         <div class="col-4 border border-info rounded shadow">
             <h3>Address: ${this.address}</h3>
