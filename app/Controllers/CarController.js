@@ -33,7 +33,6 @@ export default class CarController {
 
         _carService.create(newCarObject)
         formData.reset()
-        $('#add-car-modal').modal('toggle')
         _drawCars()
 
         console.log(newCarObject)
